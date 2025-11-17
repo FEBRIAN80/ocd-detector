@@ -2,7 +2,7 @@
 
 Website untuk melakukan tes skrining awal gejala Obsessive Compulsive Disorder (OCD) menggunakan PHP Native, MySQL, dan Tailwind CSS.
 
-## 🚀 Fitur
+## Fitur
 
 - **Landing Page** yang informatif dan menarik
 - **Sistem Registrasi & Login** user
@@ -12,7 +12,7 @@ Website untuk melakukan tes skrining awal gejala Obsessive Compulsive Disorder (
 - **Dashboard Admin** untuk melihat semua hasil user
 - **Responsive Design** menggunakan Tailwind CSS
 
-## 🛠 Teknologi
+## Teknologi
 
 - PHP Native (tanpa framework)
 - MySQL Database
@@ -20,7 +20,7 @@ Website untuk melakukan tes skrining awal gejala Obsessive Compulsive Disorder (
 - Tailwind CSS
 - Chart.js
 
-## 📦 Instalasi
+## Instalasi
 
 1. **Clone atau download project ini**
 2. **Import database:**
@@ -33,18 +33,16 @@ Website untuk melakukan tes skrining awal gejala Obsessive Compulsive Disorder (
    - Letakkan folder project di htdocs (XAMPP) atau www (Laragon)
    - Akses melalui browser: `http://localhost/ocd-website`
 
-## 👤 Akses Default
+##  Akses Default
 
 **Admin Login:**
 - Username: `admin`
 - Password: `admin123`
 
-## 📊 Kategori Hasil
+##  Kategori Hasil
 
 - **0-7**: Sangat Ringan
 - **8-15**: Ringan  
 - **16-23**: Sedang
 - **24-31**: Cukup Berat
 - **32-40**: Sangat Berat
-
-## 📁 Struktur File
