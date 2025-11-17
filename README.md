@@ -23,40 +23,6 @@ Website untuk melakukan tes skrining awal gejala Obsessive Compulsive Disorder (
 - **Visualization**: Chart.js
 - **Build Tool**: npm (Tailwind CSS)
 
-## Struktur Folder
-
-```
-ocd-website/
-├── admin/
-│   ├── dashboard.php
-│   ├── logout.php
-│   └── includes/
-│       ├── header.php
-│       └── footer.php
-├── assets/
-│   └── css/
-│       ├── input.css (Tailwind source)
-│       ├── style.css (compiled)
-│       └── custom.css
-├── config/
-│   └── database.php
-├── includes/
-│   ├── header.php (global header untuk user pages)
-│   └── footer.php (global footer untuk user pages)
-├── index.php
-├── login.php
-├── register.php
-├── kuesioner.php
-├── hasil.php
-├── download_invoice.php
-├── proses_kuesioner.php
-├── admin_login.php
-├── logout.php
-├── package.json
-├── tailwind.config.js
-└── README.md
-```
-
 ## Instalasi
 
 ### Prerequisites
@@ -120,29 +86,6 @@ Untuk development dengan auto-rebuild CSS:
 ```bash
 npm run tailwind:watch
 ```
-
-### Struktur Halaman
-
-**User Pages** menggunakan include system:
-```php
-<?php
-$page_title = 'Nama Halaman';
-include 'includes/header.php';
-// Konten halaman
-include 'includes/footer.php';
-?>
-```
-
-**Admin Pages** menggunakan include system:
-```php
-<?php
-$page_title = 'Admin Dashboard';
-include '../includes/header.php';
-// Konten halaman
-include '../includes/footer.php';
-?>
-```
-
 ## Fitur Halaman
 
 ### Landing Page (`index.php`)
@@ -190,10 +133,6 @@ include '../includes/footer.php';
 - Tailwind CSS di-compile ke `assets/css/style.css` - jangan edit file ini, edit `assets/css/input.css` saja
 - Untuk production, pastikan environment variables aman
 - Jangan expose `config/database.php` credentials ke repository
-
-## License
-
-MIT License - Feel free to use and modify
 
 ## Author
 
