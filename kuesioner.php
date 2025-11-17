@@ -1,6 +1,6 @@
 <?php
-include 'config/database.php';
-checkLogin();
+$page_title = 'Kuesioner OCD';
+include 'includes/header.php';
 $db = new Database();
 
 // Ambil pertanyaan dari database
@@ -9,15 +9,6 @@ $result = $db->conn->query($query);
 $pertanyaan = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuesioner OCD - OCD Detector</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 min-h-screen">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
@@ -138,5 +129,6 @@ $pertanyaan = $result->fetch_all(MYSQLI_ASSOC);
             updateProgress();
         });
     </script>
-</body>
+
+<?php include 'includes/footer.php'; ?>
 </html>

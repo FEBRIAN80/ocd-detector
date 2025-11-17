@@ -1,6 +1,6 @@
 <?php
-include '../config/database.php';
-checkAdminLogin();
+$page_title = 'Admin Dashboard';
+include '../includes/header.php';
 $db = new Database();
 
 // Ambil data users dan hasil test
@@ -30,16 +30,8 @@ foreach ($users_data as $user) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - OCD Detector</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body class="bg-gray-50 min-h-screen">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
@@ -197,4 +189,4 @@ foreach ($users_data as $user) {
         });
     </script>
 </body>
-</html>
+<?php include '../includes/footer.php'; ?>

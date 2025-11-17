@@ -1,0 +1,12 @@
+{
+  "name": "ocd-detector",
+  "version": "1.0.0",
+  "description": "OCD Detection Website",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css",
+    "tailwind:watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

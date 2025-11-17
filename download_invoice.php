@@ -1,7 +1,7 @@
 <?php
+$page_title = 'Download Invoice';
 ob_start();
-include 'config/database.php';
-checkLogin();
+include 'includes/header.php';
 $db = new Database();
 
 // Ambil hasil test terakhir user

@@ -1,6 +1,6 @@
 <?php
-include 'config/database.php';
-checkLogin();
+$page_title = 'Hasil Tes OCD';
+include 'includes/header.php';
 $db = new Database();
 
 // Ambil hasil test terakhir user
@@ -29,16 +29,8 @@ $penjelasan = [
 ];
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil Tes - OCD Detector</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body class="bg-gray-50 min-h-screen">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
@@ -204,5 +196,6 @@ $penjelasan = [
             }
         });
     </script>
-</body>
+
+<?php include 'includes/footer.php'; ?>
 </html>
