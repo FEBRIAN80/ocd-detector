@@ -86,47 +86,6 @@ Untuk development dengan auto-rebuild CSS:
 ```bash
 npm run tailwind:watch
 ```
-## Fitur Halaman
-
-### Landing Page (`index.php`)
-- Pengenalan aplikasi
-- CTA untuk register/login
-- Informasi tentang OCD
-- Link ke halaman login user/admin
-
-### Kuesioner (`kuesioner.php`)
-- 10 pertanyaan OCD
-- Progress bar real-time
-- Validasi form sebelum submit
-- Skala jawaban 0-4 (Tidak Pernah - Sangat Sering)
-
-### Hasil Test (`hasil.php`)
-- Menampilkan skor total
-- Kategori dan penjelasan hasil
-- Chart visualisasi skor
-- Tombol download invoice
-- Opsi untuk test ulang
-
-### Download Invoice (`download_invoice.php`)
-- Generate laporan professional PDF-ready
-- Informasi pasien lengkap
-- Detail jawaban per pertanyaan
-- Trigger print dialog browser
-- Save as PDF functionality
-
-### Admin Dashboard (`admin/dashboard.php`)
-- Statistik pengguna
-- Chart distribusi kategori
-- Tabel daftar hasil test semua user
-- Sorting berdasarkan skor
-
-## Security
-
-- Password hashing menggunakan `password_hash()` dan `password_verify()`
-- Session management untuk user dan admin
-- Input escaping menggunakan `escape_string()`
-- Login validation pada setiap protected page
-
 ## Catatan
 
 - Database port default MySQL: 3306 (dapat dikonfigurasi di `config/database.php`)
